@@ -27,7 +27,14 @@ return {
 			})
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
-				filetypes = { "python", "quarto" },
+				filetypes = { "python", "quarto", "markdown" },
+				python = {
+					analysis = {
+						autoSearchPaths = true,
+						useLibraryCodeForTypes = true,
+						diagnosticMode = "workspace",
+					},
+				},
 			})
 
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
