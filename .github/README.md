@@ -1,10 +1,12 @@
 # DataVim
 DataVim is a Neovim setup prepared for Data Science and to easily run code and interact with Jupyter Notebooks without ever leaving your terminal. It also provides a well structured config that makes it an easy starting point to extend it as you want.
 
+Here will go a demo video of when it's fully completed.
 ## Requirements
 - Kitty 0.28+
 - Neovim 0.9.4+
 - Python 3.10+
+- Ripgrep 11.0+
 - Required python packages:
     - [`pynvim`](https://github.com/neovim/pynvim)
     - [`jupyter_client`](https://github.com/jupyter/jupyter_client)
@@ -18,7 +20,14 @@ DataVim is a Neovim setup prepared for Data Science and to easily run code and i
 - ImageMagick
 - Lua 5.1
 
+## Features
+- Here go features
+- More features
+
 ## Setting up for the first time
+>[!WARNING]
+> DataNvim will only render images if the terminal it's used on is Kitty!
+
 - Install Kitty
 - Install [luarocks](https://luarocks.org/#quick-start), Lua language's package manager.
 - Install the `magick` rock with: `luarocks --local --lua-version=5.1 install magick`
