@@ -1,7 +1,8 @@
 # DataNvim
 DataNvim is a Neovim setup prepared for Data Science and to easily run code and interact with Jupyter Notebooks without ever leaving your terminal. It also provides a well structured config that makes it an easy starting point to extend it as you want.
 
-Here will go a demo video of when it's fully completed.
+![DataNvim](https://github.com/NoOPeEKS/DataNvim/assets/73296276/4c22d6bd-e8fe-4151-a18f-05694a0154c2)
+
 ## Requirements
 - Kitty 0.28+
 - Neovim 0.9.4+
