@@ -109,3 +109,13 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 | <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>v</kbd>                                           |  v   | Molten Evaluate Visual Selection    |
 | <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>o</kbd>                                           |  n   | Molten Enter Cell Output            |
 | <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>h</kbd>                                           |  n   | Molten Hide Output                  |
+
+#### Telescope
+| Key                                                                                      | Mode | Action                              |
+| ---------------------------------------------------------------------------------------- | :--: | ----------------------------------- |
+| <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>f</kbd>                                           |  n   | Telescope Fuzzy Find File           |
+| <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>w</kbd>                                           |  n   | Telescope Fuzzy Find Word           |
+| <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>b</kbd>                                           |  n   | Telescope Fuzzy Find Buffers        |
+| <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>o</kbd>                                           |  n   | Telescope Fuzzy Find Oldfiles       |
+| <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>z</kbd>                                           |  n   | Telescope Fuzzy Find Current Buffer |
+| <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>h</kbd>                                           |  n   | Telescope Help Tags                 |
