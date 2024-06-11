@@ -23,7 +23,7 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
     - [`pillow`](https://pypi.org/project/pillow/)
 
 ## Feature Highlights
-- Carefully designed [configuration](#Configuration) file structure for easy extension and modification
+- Carefully designed [configuration](#configuration) file structure for easy extension and modification
 - Beautiful colorscheme from [catppuccin](https://github.com/catppuccin/nvim)
 - Powerful file explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - Fuzzy search and preview files, words and gitfiles thanks to [telescope](https://github.com/nvim-telescope/telescope.nvim)
@@ -73,7 +73,7 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 :MasonInstallAll
 ```
 - Open your notebook with the virtual environment activated and load the kernel with `:MoltenInit project_name`
-- Start executing cells with [Keybindings](##Keybindings)
+- Start executing cells with [Keybindings](#keybindings)
 
 
 ## Keybindings
