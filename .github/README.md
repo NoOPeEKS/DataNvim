@@ -143,12 +143,14 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 | <kbd>Space</kbd> + <kbd>q</kbd>                       |  n   | Set to Quickfix list                    | 
 
 ## Configuration
+------------
 DataNvim is a very straightforward Neovim distribution that aims to be a batteries-included starting point for Data Science in Neovim. Thus, its directory structure for configuration is meant to be easy to understand:
----
+
 ├── init.lua                <- Neovim's entrypoint. You should probably not modify anything here. Just require your own files.
 ├── lua                     <- Configuration for DataNvim goes here.
 │   ├── plugins.lua         <- Empty table. It will contain everything inside plugins/
 │   ├── vim-options.lua     <- Vim options and general movement keybindings.
 │   ├── plugins             <- This folder contains all of your plugins. To install new ones, create a file and make it return your plugin.
 │   │   └── plugin_name.lua <- Returns a table with the plugin to install and its configuration.
----
+
+--------
