@@ -77,6 +77,35 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 
 
 ## Keybindings
+
+### Vim actions
 | Key                                                                                      | Mode | Action                              |
 | ---------------------------------------------------------------------------------------- | :--: | ----------------------------------- |
 | <kbd>Ctrl</kbd> + <kbd>h</kbd>                                                           |  i   | Navigate left in insert mode        |
+| <kbd>Ctrl</kbd> + <kbd>j</kbd>                                                           |  i   | Navigate down in insert mode        |
+| <kbd>Ctrl</kbd> + <kbd>k</kbd>                                                           |  i   | Navigate up in insert mode          |
+| <kbd>Ctrl</kbd> + <kbd>l</kbd>                                                           |  i   | Navigate right in insert mode       |
+| <kbd>Ctrl</kbd> + <kbd>s</kbd>                                                           |i, v, n| Save current buffer                |
+| <kbd>Space</kbd> + <kbd>x</kbd>                                                            |  n   | Close current buffer                |
+
+### Plugins
+
+#### NvimTree
+| Key                                                                                      | Mode | Action                              |
+| ---------------------------------------------------------------------------------------- | :--: | ----------------------------------- |
+| <kbd>Ctrl</kbd> + <kbd>n</kbd>                                                           |  n   | Toggle file explorer                |
+| <kbd>Ctrl</kbd> + <kbd>j</kbd>                                                           |  n   | Focus file explorer                 |
+
+#### None-ls
+| Key                                                                                      | Mode | Action                              |
+| ---------------------------------------------------------------------------------------- | :--: | ----------------------------------- |
+| <kbd>Space</kbd> + <kbd>g</kbd> + <kbd>f</kbd>                                           |  n   | Format current buffer               |
+
+#### Molten.nvim
+| Key                                                                                      | Mode | Action                              |
+| ---------------------------------------------------------------------------------------- | :--: | ----------------------------------- |
+| <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>i</kbd>                                           |  n   | Molten Init Python Kernel           |
+| <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>l</kbd>                                           |  n   | Molten Evaluate Current Line        |
+| <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>v</kbd>                                           |  v   | Molten Evaluate Visual Selection    |
+| <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>o</kbd>                                           |  n   | Molten Enter Cell Output            |
+| <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>h</kbd>                                           |  n   | Molten Hide Output                  |
