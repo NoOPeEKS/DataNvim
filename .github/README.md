@@ -86,7 +86,9 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 | <kbd>Ctrl</kbd> + <kbd>k</kbd>                                                           |  i   | Navigate up in insert mode          |
 | <kbd>Ctrl</kbd> + <kbd>l</kbd>                                                           |  i   | Navigate right in insert mode       |
 | <kbd>Ctrl</kbd> + <kbd>s</kbd>                                                           |i, v, n| Save current buffer                |
-| <kbd>Space</kbd> + <kbd>x</kbd>                                                            |  n   | Close current buffer                |
+| <kbd>Space</kbd> + <kbd>x</kbd>                                                          |  n   | Close current buffer                |
+| <kbd>Tab</kbd>                                                                           |  n   | Go to next buffer                   |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd>                                                        |  n   | Go to previous buffer               |
 
 ### Plugins
 
@@ -119,3 +121,24 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 | <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>o</kbd>                                           |  n   | Telescope Fuzzy Find Oldfiles       |
 | <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>z</kbd>                                           |  n   | Telescope Fuzzy Find Current Buffer |
 | <kbd>Space</kbd> + <kbd>f</kbd> + <kbd>h</kbd>                                           |  n   | Telescope Help Tags                 |
+
+#### LSP
+| Key                                                   | Mode | Action                                  |
+|-------------------------------------------------------| :--: |-----------------------------------------|
+| <kbd>g</kbd> + <kbd>D</kbd>                           |  n   | Go to Declaration                       |
+| <kbd>g</kbd> + <kbd>d</kbd>                           |  n   | Go to Definition                        |
+| <kbd>K</kbd>                                          |  n   | Hover                                   |
+| <kbd>g</kbd> + <kbd>i</kbd>                           |  n   | Go to Implementation                    |
+| <kbd>leader</kbd> + <kbd>c</kbd> + <kbd>a</kbd>       |  n   | Code Action                             |
+| <kbd>Ctrl</kbd> + <kbd>k</kbd>                        |  n   | Signature Help                          |
+| <kbd>Space</kbd> + <kbd>w</kbd> + <kbd>a</kbd>        |  n   | Add Workspace Folder                    |
+| <kbd>Space</kbd> + <kbd>w</kbd> + <kbd>r</kbd>        |  n   | Remove Workspace Folder                 |
+| <kbd>Space</kbd> + <kbd>w</kbd> + <kbd>l</kbd>        |  n   | List Workspace Folders                  |
+| <kbd>Space</kbd> + <kbd>D</kbd>                       |  n   | Go to Type Definition                   |
+| <kbd>Space</kbd> + <kbd>r</kbd> + <kbd>n</kbd>        |  n   | Rename                                  |
+| <kbd>g</kbd> + <kbd>r</kbd>                           |  n   | List References                         |
+| <kbd>Space</kbd> + <kbd>e</kbd>                       |  n   | Open Diagnostic Float                   |
+| <kbd>[</kbd> + <kbd>d</kbd>                           |  n   | Go to Previous Diagnostic               |
+| <kbd>]</kbd> + <kbd>d</kbd>                           |  n   | Go to Next Diagnostic                   |
+| <kbd>Space</kbd> + <kbd>q</kbd>                       |  n   | Set to Quickfix list                    | 
+
