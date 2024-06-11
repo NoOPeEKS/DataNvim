@@ -1,5 +1,5 @@
-# DataVim
-DataVim is a Neovim setup prepared for Data Science and to easily run code and interact with Jupyter Notebooks without ever leaving your terminal. It also provides a well structured config that makes it an easy starting point to extend it as you want.
+# DataNvim
+DataNvim is a Neovim setup prepared for Data Science and to easily run code and interact with Jupyter Notebooks without ever leaving your terminal. It also provides a well structured config that makes it an easy starting point to extend it as you want.
 
 Here will go a demo video of when it's fully completed.
 ## Requirements
