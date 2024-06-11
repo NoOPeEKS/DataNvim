@@ -4,26 +4,34 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
 ![DataNvim](https://github.com/NoOPeEKS/DataNvim/assets/73296276/4c22d6bd-e8fe-4151-a18f-05694a0154c2)
 
 ## Requirements
+- GCC
 - Kitty 0.28+
 - Neovim 0.9.4+
 - Python 3.10+
 - Ripgrep 11.0+
-- Required python packages:
-    - [`pynvim`](https://github.com/neovim/pynvim)
-    - [`jupyter_client`](https://github.com/jupyter/jupyter_client)
-    - [`cairosvg`](https://cairosvg.org)
-    - `plotly` and `kaleido`
-    - `pyperclip`
-    - `nbformat`
-    - `pillow`
 - Quarto
 - Npm 10.8.1+
 - ImageMagick
 - Lua 5.1
+- Required python packages:
+    - [`pynvim`](https://github.com/neovim/pynvim)
+    - [`jupyter_client`](https://github.com/jupyter/jupyter_client)
+    - [`cairosvg`](https://cairosvg.org)
+    - [`plotly`](https://plotly.com/python/) and [`kaleido`](https://github.com/plotly/Kaleido)
+    - [`pyperclip`](https://github.com/asweigart/pyperclip)
+    - [`nbformat`](https://github.com/jupyter/nbformat)
+    - [`pillow`](https://pypi.org/project/pillow/)
 
-## Features
-- Here go features
-- More features
+## Feature Highlights
+- Carefully designed [configuration](#Configuration) file structure for easy extension and modification
+- Beautiful colorscheme from [catppuccin](https://github.com/catppuccin/nvim)
+- Powerful file explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+- Fuzzy search and preview files, words and gitfiles thanks to [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- Preconfigured highlighting and Lsp Autocompletion for Python thanks to [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) and [nvim-lsp-config](https://github.com/neovim/nvim-lspconfig)
+- Extensible formatting, diagnostics, code actions and completion with [none-ls](https://github.com/nvimtools/none-ls.nvim)
+- Complete Jupyter Notebook interaction set up thanks to [molten.nvim](https://github.com/benlubas/molten-nvim), [quarto](https://github.com/quarto-dev/quarto-nvim), and [jupytext](https://github.com/GCBallesteros/jupytext.nvim)
+- Simple but beautiful status bar thanks to [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- Easy buffer navigation with [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 
 ## Setting up for the first time
 >[!WARNING]
@@ -51,6 +59,24 @@ source venv/bin/activate
 pip install ipykernel
 python -m ipykernel --user --name project_name
 ```
+- Backup your current Neovim configuration
+```bash
+mv ~/.config/nvim ~/config/nvim.bak
+```
+- Install DataNvim's configuration
+```bash
+git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
+```
+- Run the following commands:
+```vim
+:UpdateRemotePlugins
+:MasonInstallAll
+```
 - Open your notebook with the virtual environment activated and load the kernel with `:MoltenInit project_name`
-- Start executing cells
+- Start executing cells with [Keybindings](##Keybindings)
 
+
+## Keybindings
+| Key                                                                                      | Mode | Action                              |
+| ---------------------------------------------------------------------------------------- | :--: | ----------------------------------- |
+| <kbd>Ctrl</kbd> + <kbd>h</kbd>                                                           |  i   | Navigate left in insert mode        |
