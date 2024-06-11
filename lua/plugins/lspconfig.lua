@@ -27,12 +27,18 @@ return {
 			})
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
+        handlers = {
+          ["textDocument/publishDiagnostics"] = function () end,
+        },
+        on_attach = function(client, _)
+          client.server_capabilities.codeActionProvider = false
+        end,
 				filetypes = { "python", "quarto", "markdown" },
 				python = {
 					analysis = {
 						autoSearchPaths = true,
 						useLibraryCodeForTypes = true,
-						diagnosticMode = "workspace",
+            typeCheckingMode = "basic"
 					},
 				},
 			})
