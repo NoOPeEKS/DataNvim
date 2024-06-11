@@ -1,9 +1,9 @@
-# DataNvim
+# 📊 DataNvim
 DataNvim is a custom Neovim distribution prepared for Data Science and to easily run code and interact with Jupyter Notebooks without ever leaving your terminal. It also provides a well structured config that makes it an easy starting point to extend it as you want.
 
 ![DataNvim](https://github.com/NoOPeEKS/DataNvim/assets/73296276/4c22d6bd-e8fe-4151-a18f-05694a0154c2)
 
-## Requirements
+## 📋 Requirements
 - GCC
 - Kitty 0.28+
 - Neovim 0.9.4+
@@ -22,7 +22,7 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
     - [`nbformat`](https://github.com/jupyter/nbformat)
     - [`pillow`](https://pypi.org/project/pillow/)
 
-## Feature Highlights
+## ✨ Feature Highlights
 - Carefully designed [configuration](#configuration) file structure for easy extension and modification
 - Beautiful colorscheme from [catppuccin](https://github.com/catppuccin/nvim)
 - Powerful file explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
@@ -33,7 +33,7 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
 - Simple but beautiful status bar thanks to [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - Easy buffer navigation with [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 
-## Setting up for the first time
+## 🛠️ Setting up for the first time
 >[!WARNING]
 > DataNvim will only render images if the terminal it's used on is Kitty!
 
@@ -76,7 +76,7 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 - Start executing cells with [Keybindings](#keybindings)
 
 
-## Keybindings
+## ⌨️ Keybindings
 
 ### Vim actions
 | Key                                                                                      | Mode | Action                              |
@@ -142,7 +142,7 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 | <kbd>]</kbd> + <kbd>d</kbd>                           |  n   | Go to Next Diagnostic                   |
 | <kbd>Space</kbd> + <kbd>q</kbd>                       |  n   | Set to Quickfix list                    | 
 
-## Configuration
+## ✏️ Configuration
 DataNvim is a very straightforward Neovim distribution that aims to be a batteries-included starting point for Data Science in Neovim. Thus, its directory structure for configuration is meant to be easy to understand:
 ```
 ├── init.lua                <- Neovim's entrypoint. You should probably not modify anything here. Just require your own files.
