@@ -21,6 +21,8 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
     - [`pyperclip`](https://github.com/asweigart/pyperclip)
     - [`nbformat`](https://github.com/jupyter/nbformat)
     - [`pillow`](https://pypi.org/project/pillow/)
+    - [`ipykernel`](https://pypi.org/project/ipykernel/)
+    - 
 
 ## ✨ Feature Highlights
 - Carefully designed [configuration](#configuration) file structure for easy extension and modification
@@ -32,6 +34,15 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
 - Complete Jupyter Notebook interaction set up thanks to [molten.nvim](https://github.com/benlubas/molten-nvim), [quarto](https://github.com/quarto-dev/quarto-nvim), and [jupytext](https://github.com/GCBallesteros/jupytext.nvim)
 - Simple but beautiful status bar thanks to [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - Easy buffer navigation with [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+
+## 🔍 Want to try our Docker Container first?
+- Pull DataNvim's image from `ghcr.io/noopeeks/data-nvim:latest`
+```bash
+docker run -it ghcr.io/noopeeks/data-nvim:latest /bin/bash
+# Once inside prompt, run nvim
+nvim
+```
+- Try it out, there is a demo .ipynb file in the home directory!
 
 ## 🛠️ Setting up for the first time
 >[!WARNING]
@@ -49,12 +60,13 @@ python -m venv neovim
 - Activate the virtual environment and install the beforementioned python packages with:
 ```bash
 source ~/.virtualenvs/neovim/bin/activate
-pip install ipykernel pynvim jupyter_client cairosvg plotly kaleido pyperclip nbformat pillow
+pip install ipykernel jupytext pynvim jupyter_client cairosvg plotly kaleido pyperclip nbformat pillow
+python -m ipykernel
 deactivate
 ```
 - Install ipykernel in your project-scoped virtual environment
 ```bash
-cd whatever/directory
+cd whatever/directory/your/project/is/in
 source venv/bin/activate
 pip install ipykernel
 python -m ipykernel --user --name project_name
@@ -72,7 +84,7 @@ git clone https://github.com/NoOPeEKS/DataNvim.git ~/.config/nvim && nvim
 :UpdateRemotePlugins
 :MasonInstallAll
 ```
-- Open your notebook with the virtual environment activated and load the kernel with `:MoltenInit project_name`
+- Open your notebook with the virtual environment activated and load the kernel with `:MoltenInit project_name` or <kbd>Space</kbd> + <kbd>m</kbd> + <kbd>i</kbd>.
 - Start executing cells with [Keybindings](#keybindings)
 
 
