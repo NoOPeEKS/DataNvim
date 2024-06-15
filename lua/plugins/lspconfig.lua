@@ -33,7 +33,7 @@ return {
         on_attach = function(client, _)
           client.server_capabilities.codeActionProvider = false
         end,
-				filetypes = { "python", "quarto", "markdown" },
+				filetypes = { "python"},
 				python = {
 					analysis = {
 						autoSearchPaths = true,
