@@ -22,7 +22,6 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
     - [`nbformat`](https://github.com/jupyter/nbformat)
     - [`pillow`](https://pypi.org/project/pillow/)
     - [`ipykernel`](https://pypi.org/project/ipykernel/)
-    - 
 
 ## ✨ Feature Highlights
 - Carefully designed [configuration](#configuration) file structure for easy extension and modification
@@ -68,8 +67,8 @@ deactivate
 ```bash
 cd whatever/directory/your/project/is/in
 source venv/bin/activate
-pip install ipykernel
-python -m ipykernel --user --name project_name
+pip install ipykernel jupytext
+python -m ipykernel install --user --name project_name
 ```
 - Backup your current Neovim configuration
 ```bash
