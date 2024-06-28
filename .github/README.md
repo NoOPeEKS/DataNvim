@@ -29,7 +29,7 @@ DataNvim is a custom Neovim distribution prepared for Data Science and to easily
 - Powerful file explorer with [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - Fuzzy search and preview files, words and gitfiles thanks to [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - Preconfigured highlighting and Lsp Autocompletion for Python thanks to [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) and [nvim-lsp-config](https://github.com/neovim/nvim-lspconfig)
-- Extensible formatting, diagnostics, code actions and completion with [none-ls](https://github.com/nvimtools/none-ls.nvim)
+- Extensible formatting, diagnostics, code actions and completion with [none-ls](https://github.com/nvimtools/none-ls.nvim) and [ruff](https://github.com/astral-sh/ruff)
 - Complete Jupyter Notebook interaction set up thanks to [molten.nvim](https://github.com/benlubas/molten-nvim), [quarto](https://github.com/quarto-dev/quarto-nvim), and [jupytext](https://github.com/GCBallesteros/jupytext.nvim)
 - Simple but beautiful status bar thanks to [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - Easy buffer navigation with [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
@@ -47,6 +47,7 @@ nvim
 >[!WARNING]
 > DataNvim will only render images if the terminal it's used on is Kitty!
 
+- Install all the listed dependencies
 - Install Kitty
 - Install [luarocks](https://luarocks.org/#quick-start), Lua language's package manager.
 - Install the `magick` rock with: `luarocks --local --lua-version=5.1 install magick`
@@ -63,7 +64,7 @@ pip install ipykernel jupytext pynvim jupyter_client cairosvg plotly kaleido pyp
 python -m ipykernel
 deactivate
 ```
-- Install ipykernel in your project-scoped virtual environment
+- Install ipykernel and jupytext in your project-scoped virtual environment
 ```bash
 cd whatever/directory/your/project/is/in
 source venv/bin/activate
