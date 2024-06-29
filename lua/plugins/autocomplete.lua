@@ -1,5 +1,8 @@
 return {
 	{
+		"hrsh7th/cmp-path",
+	},
+	{
 		"hrsh7th/cmp-nvim-lsp",
 	},
 	{
@@ -71,6 +74,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
           { name = "otter" },
+          { name = "path" },
 				}, {
 					{ name = "buffer" },
 				}),
